@@ -25,7 +25,7 @@ else:
 for numero in range (1,21):
     if numero % 3 == 0:
         print(numero, "PASS")
-   else:
+    else:
        print(numero, "FAIL")
 
 
@@ -62,5 +62,16 @@ while contador <3:
     if resultado:
         print("La prueba pasó en el intento", contador)
         break        
+else:
+    print("La prueba agotó los reintentos")
+
+
+#Ejercicio 5.1 Reintentos
+
+for intento in range(1, 4):
+    resultado = random.choice([True, False])
+    if resultado:
+        print("La prueba pasó en el intento", intento)
+        break
 else:
     print("La prueba agotó los reintentos")
